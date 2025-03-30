@@ -24,3 +24,20 @@ function myfunctionn(){
     let Name="arun"+ " " + "shrestha";
      elm=document.getElementById('concatenated');
      elm.innerHTML= "the name was:"+Name;
+
+
+     const cars=["abc", "bca", "def"];
+     cars.push("bmw");
+     document.getElementById('const').innerHTML="the array is:"+cars;
+
+     const car={
+      type:"Big",
+      model:"BMW",
+      year:2018,
+      color:"red",
+     }
+     car.color="blue";
+     car.owner="arun";
+     document.getElementById('array').innerHTML="car owner is:"+car.owner + car.year+car.color+car.model+car.type;
+     "use strict"
+     let arun=3.33;
