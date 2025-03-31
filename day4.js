@@ -64,3 +64,16 @@ console.log("loop has ended");
         userNum=prompt("wronge number please entered the correcr number:");
     }
     console.log("congralulation you entered the correct number:");
+
+    let header = "arun gamal";
+    let tags = ["template strings", "javascript", "es6"];
+    let html = `<h2>${header}</h2>`;  
+    
+    for (const x of tags) {
+        html += `${x}`;  // Use backticks to correctly append HTML content
+    }
+    
+    console.log(html);
+    
+    
+
