@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox css</title>
+
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            align-items: center;
+            /* justify-content: center; */
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* align-content:flex-start; */
+            flex-flow:row wrap;
+            gap: 20px 10px;
+        }
+        .order-1{
+            order:1;
+        }
+        .order-2{
+            order: 2;
+        }
+
+        .iteams {
+            /* flex-grow: 1; */
+            height: 80px;
+            width: 80px;
+            background-color: yellow;
+            margin: 4px;
+            border: 2px solid black;
+
+        }
+        .iteam1{
+            /* flex-grow: 55; */
+            /* flex-shrink: 1; */
+            align-self: flex-end;
+
+        }
+        .item4{
+            align-self: flex-start;
+        }
+       
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="iteams iteam1">1</div>
+            <div class="iteams order-2">2</div>
+            <div class="iteams order-1">0</div>
+            <div class="iteams"></div>
+            <div class="iteams"></div>
+            <div class="iteams"></div>
+            <div class="iteams item4"></div>
+            <div class="iteams"></div>
+            <div class="iteams"></div>
+        
+        </div>
+      
+    </main>
+
+
+
+</body>
+
+</html>
