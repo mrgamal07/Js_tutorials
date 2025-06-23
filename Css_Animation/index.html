@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+    <style>
+        .container{
+            background-color: aliceblue;
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            animation: arun;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0,0,0,0.95);
+            animation-delay: 2s;
+            animation-direction: reverse;
+            /* animation-play-state: paused; */
+            animation: arun 3s ease-in-out 1s infinite direction fill-mode;
+
+        }
+        @keyframes arun {
+                from{
+
+                }
+                to{
+                    transform:translateX(1000px);
+                }
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
