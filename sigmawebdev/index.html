@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Highlight Long Words</title>
+    <style>
+        .highlight {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<p id="para">
+JavaScript is an amazing programminglanguage that beginners can easily understand.
+</p>
+
+<button onclick="highlightWords()">Highlight Words</button>
+
+<script>
+function highlightWords() {
+
+    let paragraph = document.getElementById("para");
+    let words = paragraph.innerText.split(" ");
+
+    let newText = "";
+
+    for (let i = 0; i < words.length; i++) {
+
+        if (words[i].length > 8) {
+            newText += "<span class='highlight'>" + words[i] + "</span> ";
+        } else {
+            newText += words[i] + " ";
+        }
+    }
+
+    paragraph.innerHTML = newText;
+}
+</script>
+
+</body>
+</html>
